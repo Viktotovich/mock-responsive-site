@@ -10,7 +10,20 @@
       <picture>
         <span id="my-name">Vladimir Viktorovich</span>
         <!--Picture goes here-->
+        <source
+          media="(min-width: 1000px)"
+          srcset="../src/media/header_pup_full-screen.jpg"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="../src/media/header_pup_tablet_resolution.jpg"
+        />
+        <img
+          src="../src/media/header_pup_9-16_mobile.jpg"
+          alt="Pup posing for a photo in an office, AI generated image"
+        />
       </picture>
+
       <div class="about-me-container">
         <h1>About Me</h1>
         <p>
@@ -26,7 +39,7 @@
       <h2>My Work</h2>
       <div class="project-grid-container">
         <div class="project-card">
-          <img src="" alt="project screenshot" />
+          <!--<img src="" alt="project screenshot" /> -->
           <h3>Project Name</h3>
           <p>Project Description</p>
         </div>
@@ -51,7 +64,18 @@
         </div>
       </div>
       <picture>
-        <!--Close up-->
+        <source
+          media="(min-width: 1000px)"
+          srcset="../src/media/professional_pup_full-screen_footer.jpg"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="../src/media/professional_pup_tablet_resolution_footer.jpg"
+        />
+        <img
+          src="../src/media/professional_pup_9-16_mobile_footer.jpg"
+          alt=""
+        />
       </picture>
     </footer>
   </body>
