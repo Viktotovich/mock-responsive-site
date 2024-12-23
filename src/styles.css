@@ -69,4 +69,32 @@ section {
 
 .project-grid-container {
   display: grid;
+  justify-items: center;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.project-card h3 a {
+  padding: 0 0.2rem;
+}
+
+.project-card p {
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
 }
