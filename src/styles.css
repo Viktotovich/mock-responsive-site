@@ -38,6 +38,7 @@ img {
   justify-content: center;
   background-color: white;
   box-shadow: 2px 5px 5px gray;
+  padding: 1rem;
 }
 
 .about-me-container h1 {
