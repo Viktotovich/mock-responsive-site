@@ -148,3 +148,63 @@ footer img {
 .telephone svg {
   padding-right: 0.5rem;
 }
+
+@media screen and (max-width: 992px) {
+  header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  header h1 {
+    padding-left: 23rem;
+  }
+
+  header picture {
+    position: static;
+    grid-area: 1 / 1 / -1 / -1;
+    transform: translateX(-30px);
+  }
+
+  header p {
+    padding-left: 22.5rem;
+  }
+
+  .second-sentence {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+
+  .about-me-container {
+    grid-area: 1 / 1 / -1 / -1;
+    padding: 2rem;
+  }
+
+  .about-me-container svg {
+    visibility: hidden;
+  }
+
+  #my-name {
+    transform: translate(200px, -550px);
+  }
+
+  .project-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  footer {
+    align-items: center;
+    padding: 0 2rem 1rem;
+  }
+
+  footer h3 {
+    padding-bottom: 3rem;
+  }
+
+  footer img {
+    max-width: 80%;
+    margin-left: 4rem;
+  }
+}
