@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  padding: 1.9rem 3rem;
+  justify-content: center;
+}
+
+#header-pup {
+  position: relative;
+}
+
+img {
+  max-width: 420px;
+}
+
+#my-name {
+  position: absolute;
+  bottom: 0;
+  font-size: 3em;
+  color: white;
+  left: 3px;
+}
+
+.about-me-container {
+  border: 1px solid gainsboro;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-container h1 {
+  font-weight: 550;
+  margin-left: 1rem;
+}
+
+.about-me-container p {
+  margin-left: 0.75rem;
+  max-width: 65ch;
+}
+
+svg {
+  width: 20px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons-container svg {
+  margin: 0 5px;
+}
+
+.icons-container svg:last-child {
+  margin-right: 19px;
+}
