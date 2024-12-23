@@ -1,6 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
+  padding: 0%;
+  margin: 0%;
 }
 
 /* DESKTOP HEADER */
@@ -8,6 +10,7 @@ header {
   display: flex;
   padding: 1.9rem 3rem;
   justify-content: center;
+  background: linear-gradient(160deg, antiquewhite 70%, white 30%);
 }
 
 #header-pup {
@@ -23,6 +26,7 @@ img {
   bottom: 0;
   font-size: 3em;
   color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   left: 3px;
 }
 
@@ -32,6 +36,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
+  box-shadow: 2px 5px 5px gray;
 }
 
 .about-me-container h1 {
@@ -65,20 +71,25 @@ svg {
 section {
   display: flex;
   flex-direction: column;
+  padding: 1rem 5rem;
 }
 
 .project-grid-container {
   display: grid;
   justify-items: center;
-  gap: 15px;
+  gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding-bottom: 5rem;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  box-shadow: 2px 5px 5px gray;
 }
 
 .project-card h3 {
@@ -95,6 +106,45 @@ section {
   padding: 0 1rem;
 }
 
+.project-card img {
+  max-width: 95%;
+}
+
 a {
   text-decoration: none;
+}
+
+/*Footer */
+footer {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+footer img {
+  margin-top: 5rem;
+  max-height: 70%;
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-me-container h3 {
+  font-size: 2rem;
+  margin-bottom: -3rem;
+}
+
+.email,
+.telephone {
+  display: flex;
+  align-items: center;
+}
+
+.email svg,
+.telephone svg {
+  padding-right: 0.5rem;
 }
