@@ -1,0 +1,268 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* DESKTOP HEADER */
+header {
+  display: flex;
+  padding: 1.9rem 3rem;
+  justify-content: center;
+  background: linear-gradient(160deg, antiquewhite 70%, white 30%);
+}
+
+#header-pup {
+  position: relative;
+}
+
+img {
+  max-width: 420px;
+}
+
+#my-name {
+  position: absolute;
+  bottom: 0;
+  font-size: 3em;
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  left: 3px;
+}
+
+.about-me-container {
+  border: 1px solid gainsboro;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 2px 5px 5px gray;
+  padding: 1rem;
+}
+
+.about-me-container h1 {
+  font-weight: 550;
+  margin-left: 1rem;
+}
+
+.about-me-container p {
+  margin-left: 0.75rem;
+  max-width: 65ch;
+}
+
+svg {
+  width: 20px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons-container svg {
+  margin: 0 5px;
+}
+
+.icons-container svg:last-child {
+  margin-right: 19px;
+}
+
+/* DESKTOP BODY */
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem;
+}
+
+.project-grid-container {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  box-shadow: 2px 5px 5px gray;
+}
+
+.project-card h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.project-card h3 a {
+  padding: 0 0.2rem;
+}
+
+.project-card p {
+  padding: 0 1rem;
+}
+
+.project-card img {
+  max-width: 95%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Footer */
+footer {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+footer img {
+  margin-top: 5rem;
+  max-height: 70%;
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-me-container h3 {
+  font-size: 2rem;
+  margin-bottom: -3rem;
+}
+
+.email,
+.telephone {
+  display: flex;
+  align-items: center;
+}
+
+.email svg,
+.telephone svg {
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  header h1 {
+    padding-left: 23rem;
+  }
+
+  header picture {
+    position: static;
+    grid-area: 1 / 1 / -1 / -1;
+    transform: translateX(-30px);
+  }
+
+  header p {
+    padding-left: 22.5rem;
+  }
+
+  .second-sentence {
+    padding-top: 5rem;
+    padding-left: 0;
+  }
+
+  .about-me-container {
+    grid-area: 1 / 1 / -1 / -1;
+    padding: 2rem;
+  }
+
+  .about-me-container svg {
+    visibility: hidden;
+  }
+
+  #my-name {
+    transform: translate(200px, -510px);
+  }
+
+  .project-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  footer {
+    align-items: center;
+    padding: 0 2rem 1rem;
+  }
+
+  footer h3 {
+    padding-bottom: 3rem;
+  }
+
+  footer img {
+    max-width: 80%;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(140deg, antiquewhite 50%, white 50%);
+  }
+
+  header picture {
+    transform: none;
+  }
+
+  #my-name {
+    transform: none;
+  }
+
+  .about-me-container {
+    padding: 2rem;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    width: 45ch;
+  }
+
+  .about-me-container p,
+  .about-me-container h1 {
+    padding: 0;
+  }
+
+  .about-me-container svg {
+    visibility: visible;
+  }
+
+  .icons-container {
+    justify-content: center;
+  }
+
+  .project-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/*# sourceMappingURL=app.css.map*/
