@@ -3,6 +3,7 @@ body {
   flex-direction: column;
 }
 
+/* DESKTOP HEADER */
 header {
   display: flex;
   padding: 1.9rem 3rem;
@@ -58,4 +59,14 @@ svg {
 
 .icons-container svg:last-child {
   margin-right: 19px;
+}
+
+/* DESKTOP BODY */
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-grid-container {
+  display: grid;
 }
